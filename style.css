@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+   /* Colors */
+
+    /* Primary */
+
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+    /* Neutral */
+
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+
+    /* Fonts */
+
+--Font-size: 15px;
+
+
+--Font-Family: 'Poppins',sans-serif;
+--Font-Weight-normal: 200;
+--Font-Weight-medium:400;
+--Font-Weight-bold: 600;
+
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--Very-Light-Gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--Font-Family);
+    font-size: var(--Font-size);
+    font-weight: var(--Font-Weight-normal);
+}
+
+h2{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+h2,h3{
+    color: var(--Very-Dark-Blue);
+}
+p{
+color: var(--Grayish-Blue);   
+font-weight: var(--Font-Weight-medium);
+}
+.title{
+    color: var(--Very-Dark-Blue);
+    font-size: 2rem;
+    font-family: var(--Font-Weight-normal);
+   
+}
+.top{
+    padding: 1rem;
+    padding-bottom: 5rem;
+    padding-top: 3rem;
+    text-align: center;
+}
+.top > p{
+    width: 45%;
+    margin-left: 29%;
+}
+.bottom{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.supervisor,.team-builder,.karma,.calculator{
+    width: 380px;
+    height: 290px;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px hsl(0, 2%, 88%);;
+    padding: 3rem 2rem 0  3rem;
+}
+.supervisor{
+    border-top: 5px solid var(--Cyan);
+}
+.team-builder{
+    border-top: 5px solid var(--Red);
+    margin-top: -11rem;
+    
+}
+.karma{
+    border-top: 5px solid var(--Orange);
+}
+.calculator{
+    border-top: 5px solid var(--Blue);
+}
+h3{
+   font-weight: var(--Font-Weight-bold);
+    font-size: 1.3rem;
+    margin-bottom: .7rem;
+}
+.supervisor > p,.team-builder > p,.karma > p,.calculator > p{
+    line-height: 1.4;
+    margin-bottom: 3rem;
+}
+img{
+    margin-left: 14rem;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+@media (max-width:450px) {
+    #container{
+        text-align: center;
+        align-items: center;
+    }
+    .bottom{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .supervisor,.team-builder,.karma,.calculator{
+        width: 90%;
+        margin-left: 1.3rem;
+    }
+    .team-builder{
+        margin-top: 0;
+    }
+    .title,h2{
+        font-size: 1.4rem;
+    }
+    .top > p{
+        width: 90%;
+        margin-left: 1.2rem;
+    }
+}
